@@ -1,0 +1,38 @@
+.page {
+    margin: 0 auto;
+    width: 1920px;
+    background-color: rgb(25, 0, 255);
+    border: 1px solid red;
+}
+
+.header {
+    position: relative;
+    
+    margin: 0 auto;
+    max-width: 1412px;
+    border: 1px solid red;
+    
+}
+.navigation {
+    
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 52px 0;
+    border: 1px solid red;
+}
+
+.header__logo {
+    position: absolute;
+    margin: 0;
+    top: 52px;
+    border: 1px solid red;
+}
+
+.navigation__element {
+    text-decoration: none;
+    color: white;
+    font-family: 'Monserrat';
+    font-weight: 600;
+    font-size: 17px;
+}
