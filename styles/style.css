@@ -1,38 +1,301 @@
-.page {
-    margin: 0 auto;
-    width: 1920px;
-    background-color: rgb(25, 0, 255);
-    border: 1px solid red;
+@font-face {
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+    font-family: 'Montserrat';
+}
+@font-face {
+    src: url(../fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+@font-face {
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+@font-face {
+    src: url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+@font-face {
+    src: url(../fonts/Adamina/Adamina/Adamina-Regular.ttf);
+    font-family: 'Adamina';
 }
 
-.header {
-    position: relative;
-    
+
+.page {
     margin: 0 auto;
-    max-width: 1412px;
+    max-width: 1920px;
+    font-family: 'Montserrat';
     border: 1px solid red;
-    
+    background: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
 }
-.navigation {
+
+ .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 31px 208px auto 300px;
+    outline: 1px solid rgb(98, 0, 255);
     
-    
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    min-width: 700px;
+    outline: 1px solid red;
+}
+.list {
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    margin: 52px 0;
-    border: 1px solid red;
+    outline: 1px solid red;
+}
+.list__item {
+    list-style: none;
 }
 
 .header__logo {
-    position: absolute;
     margin: 0;
     top: 52px;
-    border: 1px solid red;
+    font-family: 'Adamina';
+    font-size: 17px;
+    font-weight:400;
+    color:#FFFFFF;
+}
+
+.header__lang {
+    margin: 0;
+    width: 123px;
+    height: 58px;
+    border-radius: 5px;
+    border: none
+}
+
+.header__lang_ru {
+    background-image: url(../images/image\ 253.png);
+    background-repeat: no-repeat;
+    background-position: 16px, 50%;
+}
+
+.button__login {
+  margin: 0;
+  padding: 0;
+  min-width: 77px;
+  height: 60px;
+  background-image: linear-gradient(#FF9B05, #FF8F3F);
+  border-radius: 5px;
+  border: 0;
 }
 
 .navigation__element {
     text-decoration: none;
     color: white;
-    font-family: 'Monserrat';
-    font-weight: 600;
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 17px;
 }
+
+
+.description {
+    position: relative;
+    margin: 0 auto;
+    min-height: 850px;
+    padding-top: 106px;
+    padding-left: 300px;
+    border: 1px solid green;
+
+}
+.page__curved-line1 {
+    position: absolute;
+    top: 834px;
+    width: 100%;
+    max-width: 2354px;
+    min-height: 142px;
+}
+
+.description__title {
+    margin: 0;
+    width: 611px;
+    font-size: 55px;
+    font-weight: 800;
+    color: #FFFFFF;
+    border: 1px solid red;
+    z-index: 1;
+
+}
+
+.description__subtitle {
+    position: relative;
+    max-width: 680px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+.description__img_bag {
+    margin: 0;
+    position:absolute;
+    top: 613px;
+    left: 134px;
+    z-index: 1;
+}
+.description__img_car {
+    margin: 0;
+    position:absolute;
+    top: 70px;
+    right: 0;
+    z-index: 0;
+}
+
+.button__image {
+
+}
+
+.button__buy {
+    position: relative;
+    margin: 0;
+    width: 240px;
+    height: 78px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-image: linear-gradient(#FF9B05 25.06%, #FF8F3F 88.94%);
+    box-shadow: 90px, 20px, 35px rgba(189, 19, 19, .08);
+    border: 0;
+    outline: 1px solid red;
+}
+
+.button__buy-arrow {
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 1px solid red;
+
+}
+.button__video {
+    margin: 0;
+    width: 257px;
+    height: 78px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF; 
+    background: transparent;
+    color: #FFFFFF;
+    
+    border: 1px solid;
+    border-color: linear-gradient(#A9EAFF, #6CFFFF);
+    border-radius: 5px; 
+    z-index: 1;
+} 
+
+.rectangle {
+    margin: 0;
+} 
+
+
+
+.functions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 33px;
+    height: 804px;
+    width: 1920px;
+    background-color: #F5F9FF;
+}
+
+.functions__container-mobile {
+    margin: 0 auto auto 328px;
+    width: 567px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    flex-direction: row;
+    column-gap: 15px;
+    border: 1px solid red;
+}
+.functions__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 200px;
+    height: 73px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #AAAAAA;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+    border: 0;
+}
+.functions__button_ios {
+    color:#FFFFFF;
+    background-image: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+    box-shadow: 0px 15px 25px rgba(0, 163, 255, 0.3);
+}
+
+.button__logo {
+    margin: 0;
+    margin-right: 20px;
+
+}
+.functions__img {
+    object-fit:scale-down;
+}
+
+.functions__arrow {
+    display: inline-block;
+    background-color: transparent;
+}
+.change__color {
+    background-color: #3e4766;
+}
+
+.reviews {
+    margin: 0;
+    max-width: 1920px;
+    min-height: 601px;
+    /* background-image: url(../images/reviews_back.png);  */
+    border: 1px solid red;
+
+}
+
+.reviews__img {
+    margin: 0;
+    width: 100%;
+    height: 601px;
+}
+
+
+.functions__container {
+    text-align: center;
+    max-width: 649px;
+    margin: 10px 287px auto auto;
+    border: 1px solid red;
+}
+.title {
+    margin: 0;
+}
+
+/* .functions__background-image {
+    top: -120px;
+    margin: 0;
+    width: 100%;
+    border: 1px solid red;
+}  */
+
